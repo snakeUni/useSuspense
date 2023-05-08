@@ -5,13 +5,13 @@
 ## Install
 
 ```shell
-yarn add use-suspense
+yarn add suspense-use
 ```
 
 ## Usage
 
 ```tsx
-import { useSuspense } from 'use-suspense'
+import { useSuspense } from 'suspense-use'
 
 const resolve = () => {
   return new Promise(r => {
@@ -29,7 +29,7 @@ function App() {
 使用参数，resolve 中需要的参数需要传递给 useSuspense
 
 ```tsx
-import { useSuspense } from 'use-suspense'
+import { useSuspense } from 'suspense-use'
 
 const resolve = () => {
   return new Promise(r => {
