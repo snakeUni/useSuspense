@@ -1,0 +1,25 @@
+{
+  "name": "use-suspense",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build:lib": "tsc",
+    "build:es": "tsc -p tsconfig.es.json",
+    "build": "yarn build:lib & yarn build:es"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "repository": "https://github.com/snakeUni/useSuspense.git",
+  "author": "Uni <1025687605@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "react": "18.3.0-canary-aef7ce554-20230503",
+    "react-dom": "18.3.0-canary-aef7ce554-20230503",
+    "typescript": "^5.0.4"
+  }
+}
