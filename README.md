@@ -1,6 +1,6 @@
 # useSuspense
 
-三行代码实现 suspense fetch，兼容 SSR
+几行代码实现 suspense fetch，兼容 SSR
 
 ## Install
 
@@ -22,7 +22,7 @@ const resolve = () => {
 }
 
 function App() {
-  const value = useSuspense(() => resolve())
+  const [_, value] = useSuspense(() => resolve())
 }
 ```
 
@@ -42,7 +42,7 @@ const resolve = () => {
 function App() {
   const [name, setName] = useState('snake')
   // 每次 name 变化触发重新请求
-  const value = useSuspense(() => resolve(), { name })
+  const [isPending, value] = useSuspense(() => resolve(), { name })
 }
 ```
 
